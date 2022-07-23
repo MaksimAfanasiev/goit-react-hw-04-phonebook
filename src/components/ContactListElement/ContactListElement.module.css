@@ -1,0 +1,23 @@
+.contactListItem {
+    display: flex;
+    max-width: 350px;
+}
+
+.contactListItem:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.deleteBtn {
+    margin-left: auto;
+}
+
+.contactListItem::before{
+    content: "";
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+}

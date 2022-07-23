@@ -1,0 +1,9 @@
+.filterLabel {
+    display: block;
+    padding: 10px 15px;
+}
+
+.filterInput {
+    display: block;
+    margin-top: 5px;
+}
