@@ -14,9 +14,9 @@ export const ContactListElement = ({ contact, deleteItem }) => {
 
 ContactListElement.propTypes = {
     contact: PropTypes.shape({
-        id: PropTypes.string,
-        name: PropTypes.string,
-        number: PropTypes.string,
+        id: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+        number: PropTypes.string.isRequired,
     }),
-    deleteItem: PropTypes.func,
+    deleteItem: PropTypes.func.isRequired,
 }
