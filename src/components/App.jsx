@@ -14,7 +14,7 @@ export const App = () => {
 
   useEffect(() => {
     const KEY = "contacts"
-    const savedData = JSON.parse(localStorage.getItem(KEY));
+    const savedData = localStorage.getItem(KEY) ? JSON.parse(localStorage.getItem(KEY)) : [];
 
     if (savedData.length > 0) {
       setContacts(savedData)
